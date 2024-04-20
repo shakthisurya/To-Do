@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Todo List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This Todo List App is a simple yet powerful application that allows users to manage their daily tasks efficiently. With features like adding, updating, and deleting tasks, users can easily organize their to-do lists and stay productive.
 
-## Available Scripts
+## Features
+- Add new tasks with due dates
+- Mark tasks as completed
+- Edit existing tasks
+- Delete unwanted tasks
+- Update existing tasks
+- Real-time updates using Firestore database
+- Intuitive user interface for easy task management
+- **Code Organization**: The codebase is organized into separate files and folders based on functionality, promoting code readability and maintainability.
 
-In the project directory, you can run:
+## Implementation Choices
+- **Firestore Database**: Firestore was chosen for its real-time database capabilities, enabling seamless updates across multiple clients.
+- **React.js**: React.js was used for building the frontend due to its component-based architecture, which promotes code reusability and maintainability.
+- **Material-UI**: Material-UI was utilized for its pre-designed React components and theming capabilities, allowing for rapid prototyping and consistent styling.
 
-### `npm start`
+## How to Run Locally
+1. Clone this repository to your local machine.
+2. Install dependencies using `npm install`.
+3. Set up a Firestore database in your Firebase project.
+4. Update the Firebase configuration in `firebase.js` with your own credentials.
+5. Start the development server using `npm start`.
+6. Open your browser and navigate to `http://localhost:3000` to view the app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Challenges Faced
+- **Integration with Firestore**: While Firestore offers powerful real-time database capabilities, integrating it with the frontend posed some initial challenges. Understanding the Firestore data model, setting up proper security rules, and configuring real-time listeners required thorough documentation review and experimentation.
+- **Editing Tasks**: Implementing the editing feature posed a challenge, particularly handling the transition between the view mode and edit mode seamlessly. This was resolved by using state management to toggle between the two modes and updating the task data accordingly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
